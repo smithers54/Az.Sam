@@ -97,15 +97,15 @@ $wb = $Excel.Workbooks.Open($excelFile)
     $Excel.Quit()
 
 
-# Runs a foreach loop to add all of the prefixes in the csv. The name of the route will be it's Service Tag + prefix
+# Runs a foreach loop to add all of the prefixes in the csv. The name of the route will be the defined tag + prefix
 # You will be prompted for Resource Group and the Route table name
 $rg = Read-Host -Prompt 'Resource Group Name'
 $rtName = Read-Host -Prompt 'Route Table Name'
 
-
+# Gets the route table to be used
 $routeTable = Get-AzRouteTable -ResourceName $rtName -ResourceGroupName $rg
 
-
+# Runs a nested if/else statement in a foreach loop to add the routes based off the next hop type
 foreach ($file in import-csv "c:\temp\Routes2Add$tag.csv")
 {
     if ($nexthoptype -eq 'VirtualAppliance')
