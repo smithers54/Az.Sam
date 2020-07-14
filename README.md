@@ -12,6 +12,11 @@ Ex.
 
 The script will prompt for a "tag" that get's appended to the route name, the next hop type, resource group and route table name.
 
+## Requirements
+
+- Powershell or Powershell ISE as Admin  
+- Must have excel  
+
 ``` powershell
 
 #------------------------------------------------------------------------------   
