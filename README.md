@@ -1,4 +1,4 @@
-# Az.Sam
+# Azure Route Table Route Addition Script
 
 ## Description
 
