@@ -6,9 +6,9 @@ A powershell script for adding routes from a text file. Replace the $path with y
 
 Ex.
 
-10.1.0.0/16
-10.2.1.0/24
-10.3.3.4/32
+10.1.0.0/16  
+10.2.1.0/24  
+10.3.3.4/32  
 
 The script will prompt for a "tag" that get's appended to the route name, the next hop type, resource group and route table name.
 
